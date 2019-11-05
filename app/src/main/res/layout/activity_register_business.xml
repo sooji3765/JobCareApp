@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/maincolor">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비즈니스 회원가입"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_margin="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 / 비밀번호 설정"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디(필수)"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:id="@+id/idRegister"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="4~15자의 영문 소문자, 숫자"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/blue"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:inputType="textPassword"
+                android:id="@+id/passResister"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="영문, 숫자 포함 6자~20자"
+                android:textColorHint="@color/gray"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 재입력"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+
+        <EditText
+                android:inputType="textPassword"
+                android:id="@+id/pass_register_check"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="비밀번호 재입력"
+                android:textColorHint="@color/gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업정보 입력"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="회사명을 입력하시오"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:id="@+id/businessName"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회사주소를 입력하시오"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+
+        <EditText
+                android:id="@+id/businessAddress"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+        />
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사업자 번호를 입력하시오"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        <EditText
+                android:inputType="number"
+                android:id="@+id/businessNumber"
+                android:textColor="@color/blue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maincolor">
+
+        <Button
+                android:onClick="back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="이전으로"
+                android:background="@color/gray"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+
+        <Button
+                android:onClick="registerBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="확인"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue"
+                android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

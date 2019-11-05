@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".ResumeActivity"
+              android:orientation="vertical"
+              android:background="@color/maincolor">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <Button
+                android:onClick="back_btn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/yello"
+                android:textStyle="bold"
+                android:background="#00ff0000" tools:ignore="OnClick"/>
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이력서 관리"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+
+    <ListView
+            android:id="@+id/resumelist"
+            tools:listitem="@layout/applier_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </ListView>
+
+    <Button
+            android:id="@+id/writeResume"
+            android:drawableRight="@drawable/ic_right_black"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="이력서 새로 추가하기"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/blue"
+    />
+</LinearLayout>

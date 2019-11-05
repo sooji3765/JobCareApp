@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.jobcare">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".AttentaionActivity">
+        </activity>
+        <activity android:name=".JobSearchListActivity">
+        </activity>
+        <activity android:name=".ApplyListActivity">
+        </activity>
+        <activity android:name=".JobNoticeActivity">
+        </activity>
+        <activity android:name=".JobEducationActivity">
+        </activity>
+        <activity android:name=".NoticeDetailActivity">
+        </activity>
+        <activity android:name=".WriteNoticeActivity">
+        </activity>
+        <activity android:name=".NoticeActivity">
+        </activity>
+        <activity android:name=".ApplyNoticeActivity">
+        </activity>
+        <activity android:name=".LikeNoticeActivity">
+        </activity>
+        <activity android:name=".ResumeDetailActivity">
+        </activity>
+        <activity android:name=".ResumeActivity">
+        </activity>
+        <activity android:name=".WriteResumeActivity">
+        </activity>
+        <activity android:name=".JobFindSelectActivity">
+        </activity>
+        <activity android:name=".JobFindLocationActivity">
+        </activity>
+        <activity android:name=".MypageBusinessActivity">
+        </activity>
+        <activity android:name=".MyPageMemberActivity">
+        </activity>
+        <activity android:name=".RegisterBusinessActivity">
+        </activity>
+        <activity android:name=".RegisterMemberActivity">
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity
+                android:name=".SplashActivity"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+    </application>
+
+</manifest>

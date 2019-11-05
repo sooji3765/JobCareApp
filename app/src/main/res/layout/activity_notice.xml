@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@color/maincolor">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <Button
+                android:onClick="back_btn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/yello"
+                android:textStyle="bold"
+                android:background="#00ff0000"/>
+
+        <TextView
+
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공고 관리"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+        <ImageView
+                android:onClick="writeNotice"
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_centerInParent="true" tools:ignore="OnClick"/>
+    </RelativeLayout>
+
+
+    <ListView
+            android:id="@+id/noticelist"
+            tools:listitem="@layout/notice_items2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    </ListView>
+
+
+</LinearLayout>

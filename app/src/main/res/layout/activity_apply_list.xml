@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/maincolor" android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/gray">
+
+        <Button
+                android:onClick="back_btn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/yello"
+                android:textStyle="bold"
+                android:background="#00ff0000"/>
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지원자 목록"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+    <ListView
+            tools:listitem="@layout/applier_item"
+            android:id="@+id/applyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+    </ListView>
+
+</LinearLayout>

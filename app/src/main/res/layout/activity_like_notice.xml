@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:background="@color/maincolor" android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/gray">
+
+        <Button
+                android:onClick="back_btn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/yello"
+                android:textStyle="bold"
+                android:background="#00ff0000"/>
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="즐겨찾기"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+    <ListView
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/notice_items"
+            android:id="@+id/noticeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+</LinearLayout>

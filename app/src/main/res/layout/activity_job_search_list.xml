@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/maincolor"
+              android:orientation="vertical"
+              tools:context=".JobSearchListActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df"
+            android:layout_marginBottom="50dp">
+
+        <ImageView
+
+                android:onClick="homBtn"
+                android:src="@drawable/ic_home"
+                android:paddingLeft="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick"/>
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="일자리 정보"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+        />
+
+
+        <ImageView
+                android:onClick="myPage"
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_centerInParent="true" tools:ignore="OnClick"/>
+
+
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/jobBtn"
+            android:text="직업선택"
+            android:textColor="@color/blue"
+            android:drawableLeft="@drawable/ic_bag_job"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+    />
+
+    <Button
+            android:id="@+id/locationBtn"
+            android:text="지역선택"
+            android:textColor="@color/blue"
+            android:drawableLeft="@drawable/ic_pin_drop"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="90dp"
+    />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일자리 목록"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:padding="15dp"/>
+
+    <ListView
+            android:id="@+id/listjob"
+            tools:listitem="@layout/notice_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+
+    />
+
+
+</LinearLayout>

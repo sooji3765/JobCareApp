@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <Button
+                android:onClick="backBtn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="#00ff0000"/>
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="직업검색"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+        <LinearLayout
+                android:layout_margin="30dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:onClick="Job_Info_page"
+                    android:id="@+id/jobBt1"
+                    android:background="@drawable/job_btn"
+                    android:drawableLeft="@drawable/aa"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="생산/포장"
+                    android:textSize="30dp"/>
+
+            <Button
+                    android:onClick="Job_Info_page"
+                    android:id="@+id/jobBt2"
+                    android:drawableLeft="@drawable/bb"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/job_btn"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="외식/서비스"
+                    android:textSize="30dp"/>
+
+            <Button
+                    android:id="@+id/jobBt3"
+                    android:onClick="Job_Info_page"
+                    android:drawableLeft="@drawable/cc"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/job_btn"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="건설/기술"
+                    android:textSize="30dp"/>
+
+            <Button
+                    android:id="@+id/jobBt4"
+                    android:onClick="Job_Info_page"
+                    android:drawableLeft="@drawable/dd"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/job_btn"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="청소/미화"
+                    android:textSize="30dp"/>
+
+            <Button
+                    android:id="@+id/jobBt5"
+                    android:onClick="Job_Info_page"
+                    android:drawableLeft="@drawable/ee"
+                    android:background="@drawable/job_btn"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="기타/보조"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+
+
+</LinearLayout>

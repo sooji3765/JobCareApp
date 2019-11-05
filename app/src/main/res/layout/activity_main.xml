@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="@color/white"
+      tools:context=".MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOBCARE"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_centerInParent="true"
+        />
+
+
+        <ImageView
+                android:onClick="LoginPage"
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+            android:id="@+id/notification"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:drawableRight="@drawable/ic_right"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_style"
+            android:text="공지사항 ＆ 이벤트"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+    />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+
+        <Button
+                android:onClick="jobFindLocation"
+                android:id="@+id/area"
+                android:drawableLeft="@drawable/ic_place"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/job"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/main_btn"
+                android:text="지역검색"
+                android:textColor="@color/black"
+                android:textSize="35dp" />
+
+        <Button
+                android:onClick="jobFindSelect"
+                android:drawableLeft="@drawable/ic_business"
+                android:drawablePadding="5dp"
+                android:id="@+id/job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_btn"
+                android:text="직업검색"
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+        />
+
+        <Button
+                android:onClick="jobEducation"
+                android:drawableLeft="@drawable/ic_create"
+                android:id="@+id/edu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="훈련정보"
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                android:background="@drawable/main_btn"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/job"
+                android:layout_marginTop="80dp"
+        />
+    </RelativeLayout>
+</LinearLayout>

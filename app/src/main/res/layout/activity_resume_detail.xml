@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".ResumeDetailActivity"
+              android:background="@color/maincolor"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <Button
+                android:onClick="back_btn"
+                android:drawableLeft="@drawable/ic_arrow_back"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로"
+                android:textSize="20dp"
+                android:textColor="@color/yello"
+                android:textStyle="bold"
+                android:background="#00ff0000" tools:ignore="OnClick"/>
+
+        <TextView
+
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOBCARE 이력서"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginBottom="30dp">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <ImageView
+                            android:id="@+id/image"
+                            android:scaleType="centerCrop"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/image"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="50dp"/>
+
+                    <TextView
+                            android:id="@+id/detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="황다희"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="30dp"
+                            android:layout_toRightOf="@+id/image"
+                            android:layout_marginTop="80dp"/>
+
+                    <TextView
+                            android:id="@+id/detail_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24세"
+                            android:textSize="27dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:layout_below="@+id/detail_name"
+                            android:layout_toRightOf="@+id/image"/>
+
+                </RelativeLayout>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/blue"
+                        android:layout_marginBottom="10dp"
+                />
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray"
+                            android:text="휴대폰"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center"
+                    />
+
+                    <TextView
+                            android:id="@+id/detail_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="010-1234-1234"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray"
+                            android:text="ID"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center"
+                    />
+
+                    <TextView
+                            android:id="@+id/detail_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="dahui@naver.com"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center"
+                    />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/detail_title"
+                    android:background="@color/white"
+                    android:text="참된 인재로 성장하겠습니다. 제목 웅앵웅"
+                    android:textColor="@color/black"
+                    android:padding="30dp"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+            />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/resume_page_layout_design"
+            >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="희망 직업"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/blue"
+                        android:layout_marginBottom="20dp"
+                />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp">
+
+                    <TextView
+                            android:id="@+id/detail_jobs"
+                            android:text="외식/서비스(체크박스 체크한 것 띄우기)"
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/resume_page_layout_design"
+            >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="할 수 있는 일"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/blue"
+                        android:layout_marginBottom="20dp"
+                />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp">
+
+                    <TextView
+                            android:id="@+id/detail_cando"
+                            android:text="간단한 의사소통 (체크박스 체크한 것 띄우기)"
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/resume_page_layout_design"
+            >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="자기소개"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_margin="20dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/blue"
+                        android:layout_marginBottom="20dp"
+                />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp">
+
+                    <TextView
+                            android:id="@+id/detail_intro"
+                            android:text="자기소개 웅앵웅 띄우기"
+                            android:textColor="@color/black"
+                            android:textSize="23dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

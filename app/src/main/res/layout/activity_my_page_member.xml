@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MyPageMemberActivity"
+              android:background="@color/maincolor">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인서비스"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+
+        <ImageView
+                android:onClick="backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+    >
+
+        <FrameLayout
+                android:id="@+id/imagetool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignStart="@+id/imagetool"
+                    android:layout_alignBottom="@+id/imagetool"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/image"
+                    android:src="@drawable/ic_person" />
+
+            <ImageView
+                    android:id="@+id/btnCamera"
+                    android:src="@drawable/ic_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom|right"
+            />
+
+        </FrameLayout>
+
+        <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imagetool"
+                android:text="황다희"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+
+        />
+        <TextView
+                android:id="@+id/slash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/name"
+                android:layout_alignBottom="@+id/name"
+        />
+
+        <TextView
+                android:layout_alignBottom="@+id/name"
+                android:text="24세"
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/slash"
+                android:layout_marginLeft="10dp"
+        />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+        <TextView
+                android:onClick="likeNotice"
+                android:drawableTop="@drawable/ic_star"
+                android:paddingTop="30dp"
+                android:text="즐겨찾기"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+        />
+
+        <TextView
+                android:onClick="resumeManage"
+                android:drawableTop="@drawable/ic_description"
+                android:paddingTop="30dp"
+                android:text="이력서"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"/>
+
+
+        <TextView
+                android:onClick="applyNotice"
+                android:drawableTop="@drawable/ic_bag"
+                android:paddingTop="30dp"
+                android:text="지원목록"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:onClick="logout"
+            android:drawableRight="@drawable/ic_right_black"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="로그아웃"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/gray"
+    />
+</LinearLayout>

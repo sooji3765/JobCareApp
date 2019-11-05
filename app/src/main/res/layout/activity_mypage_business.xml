@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MypageBusinessActivity"
+              android:background="@color/maincolor">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#4da4df">
+
+
+        <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기업서비스"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+        />
+
+
+        <ImageView
+                android:onClick="backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+    >
+
+        <FrameLayout
+                android:id="@+id/imagetool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+            <ImageView
+                    android:id="@+id/image"
+                    android:scaleType="centerCrop"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignStart="@+id/imagetool"
+                    android:layout_alignBottom="@+id/imagetool"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/image"
+                    android:src="@drawable/ic_person" />
+
+            <ImageView
+                    android:id="@+id/imgBtn"
+                    android:src="@drawable/ic_camera"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="bottom|right"
+            />
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imagetool"
+                android:text="삼성"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+        />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+
+
+        <TextView
+                android:onClick="manageNotice"
+                android:drawableTop="@drawable/ic_mode_edit"
+                android:paddingTop="30dp"
+                android:text="공고관리"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"/>
+
+
+        <TextView
+                android:onClick="applyShow"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableTop="@drawable/ic_person_black"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:text="지원자"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+            android:onClick="logout"
+            android:drawableRight="@drawable/ic_right_black"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="로그아웃"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/gray"
+    />
+
+</LinearLayout>

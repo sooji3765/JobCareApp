@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/maincolor"
+              android:paddingBottom="30dp">
+
+    <ImageView
+            android:onClick="HomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"
+            android:padding="10dp"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:paddingTop="35dp"
+            android:layout_marginBottom="50dp" android:textAlignment="center"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="MemberRegister"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:drawableTop="@drawable/ic_accessible"
+                android:drawableRight="@drawable/ic_right"
+                android:drawablePadding="15dp"
+                android:text="개인 회원가입"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="일자리를 찾는 장애인 분들은 개인회원으로 가입해주세요"
+                android:textColor="@color/gray"
+                android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:onClick="BusinessRegister"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:drawableTop="@drawable/ic_building"
+                android:drawableRight="@drawable/ic_right"
+                android:drawablePadding="15dp"
+                android:text="비즈니스 회원가입"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="직원을 구하는 경우에는 \n 비즈니스 회원으로 가입해주세요"
+                android:textColor="@color/gray"
+                android:textSize="18dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+
