@@ -1,12 +1,19 @@
 # JobCareApp
-장애우를 위한 구인구직 앱
 
+ 장애우를 위한 구인구직 앱
 
-## 개발 스택
+## Program Stacks
 
- 1. Android Studio
- 2. Realm DB
- 3. JAVA
+### Client
+
+ - Android Studio
+ - XML
+
+### Server 
+ 
+ - Realm DB
+ - Java
+ - SharedPreferences
  
 ## 개발 기간 
 
